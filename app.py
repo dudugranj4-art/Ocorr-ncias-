@@ -1,5 +1,5 @@
 import streamlit as st
-from fpdf import FPDF  # <--- CÓDIGO CORRIGIDO AQUI
+from fpdf2 import FPDF  # <--- CÓDIGO CORRIGIDO AQUI
 from datetime import datetime
 
 # Configuração da página do aplicativo
