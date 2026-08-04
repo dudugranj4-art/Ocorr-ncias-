@@ -1,5 +1,5 @@
 import streamlit as st
-from fpdf import FPDF
+from fpdf2 import FPDF  # <--- CÓDIGO CORRIGIDO AQUI
 from datetime import datetime
 
 # Configuração da página do aplicativo
@@ -113,5 +113,5 @@ if submitted:
         data=pdf_bytes,
         file_name=f"Ocorrencia_{data_fato.strftime('%Y%m%d')}_{tipo_proc.replace(' ', '_')}.pdf",
         mime="application/pdf"
-    )
-  
+        )
+    
